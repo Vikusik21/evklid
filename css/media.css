@@ -7,21 +7,20 @@
   .container {
     padding: 0 50px;
   }
-  
+
   .header__logo {
     width: 150px;
     height: 48px;
-    padding: 27px 49px;
   }
-  
+
   .nav__list {
-    gap: 63px;
+    gap: 37px;
   }
 
   .nav__item {
     padding: 24px 0;
   }
-  
+
   .hero {
     margin-bottom: 38px;
   }
@@ -86,7 +85,7 @@
   }
 
   .question {
-    margin-bottom: 3px;
+    margin-bottom: 80px;
   }
 
   .application__list {
@@ -97,11 +96,16 @@
     margin-bottom: 73px;
   }
 
+  .application__item {
+    width: 100%;
+    max-width: 924px;
+  }
+
   .footer__list {
     gap: 1px;
   }
 
-  .footer__right { 
+  .footer__right {
     justify-content: flex-end;
   }
 
@@ -118,11 +122,10 @@
   .header__logo {
     width: 110px;
     height: 35px;
-    padding: 0;
   }
 
   .nav__list {
-    gap: 34px;
+    gap: 20px;
   }
 
   .hero__title {
@@ -139,6 +142,7 @@
     font-size: 18px;
     margin-bottom: 69px;
   }
+
   .starget__image {
     min-height: 645px;
   }
@@ -152,7 +156,7 @@
     height: 99px;
   }
 
-  .starget__item{
+  .starget__item {
     min-height: 233px;
     padding: 0;
   }
@@ -203,16 +207,242 @@
     padding: 56px 0;
   }
 
-  .footer__form{
+  .footer__form {
+    width: 541px;
     margin-bottom: 33px;
   }
 
   .footer__wraper {
-    width: 84%;
+    width: 240px;
     padding: 19px 0;
   }
 
   .footer__btn {
+    width: 541px;
     margin-bottom: 47px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .heder__top {
+    padding: 17px 0;
+    flex-wrap: wrap;
+  }
+
+  .nav__list {
+    /* display: none; */
+  }
+
+  .hero {
+    margin-bottom: 60px;
+  }
+
+  .hero__content {
+    padding: 60px 22px;
+  }
+
+  .hero__text {
+    align-items: center;
+  }
+
+  .hero__title {
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+  }
+
+  .hero__deskr {
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
+  }
+
+  .hero__btn {
+    max-width: 162px;
+    padding: 13px 28px;
+    font-size: 12px;
+  }
+
+  .stages {
+    margin-bottom: 60px;
+  }
+
+  .stages__title {
+    margin-bottom: 20px;
+    font-size: 24px;  
+  }
+
+  .starget__descr {
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 14px;
+  }
+
+  .starget__image {
+    min-height: 290px;
+  }
+
+  .left__descr {
+  font-size: 14px;
+  line-height: 28px;
+  }
+
+  .starget__btn {
+    font-size: 12px;
+    color: var(--orange-color);
+  }
+
+  .starget__left {
+    flex-direction: column;
+  }
+
+  .starget__item {
+    border: inherit;
+  }
+
+  .starget__circle {
+    gap: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .starget__top {
+    width: 64px;
+    height: 49px;
+  }
+
+  .starget__bottom {
+    width: 64px;
+    height: 49px;
+  }
+
+  .item__title {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .item__descr {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .question {
+    margin-bottom: 60px;
+  }
+
+  .question__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  :root {
+    --gap: 16px;
+  }
+
+  .question__left .item__title  {
+    line-height: 32px;
+    margin-bottom: 8px;
+  }
+
+  .question__descr {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .question__btn {
+    font-size: 12px;
+  }
+
+  .btn__right {
+    font-size: 12px;
+  }
+
+  .application {
+    margin-bottom: 60px;
+  }
+
+  .application__title {
+    font-size: 24px; 
+    margin-bottom: 20px;
+  }
+
+  .application__item {
+    border: inherit;
+    padding: 0;
+  }
+
+  .application .item__title {
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 500;
+  }
+
+  .application__descr {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .footer__title {
+    width: 215px;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .footer__blok {
+    padding: 30px 0;
+  }
+
+  .footer__form {
+    width: 290px;
+    margin-bottom: 25px;
+  }
+
+  .footer__btn {
+    width: 290px;
+    flex-direction: column;
+  }
+
+  .footer__wraper {
+    margin-bottom: 11px;
+  }
+
+  .footer__left {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer__logo {
+    padding: 16px 0;
+  }
+
+  .footer__left::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--dark_grey-color);
+  }
+
+  .icon__list {
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .icon__link {
+    width: 40px;
   }
 }
