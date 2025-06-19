@@ -383,16 +383,20 @@ img {
   gap: 50px;
 }
 
-.starget__top {
+.starget__top  {
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 190px;
+  height: 165px;
 }
 
 .starget__bottom {
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 190px;
+  height: 165px;
 }
 
 .starget__right {
