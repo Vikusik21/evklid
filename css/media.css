@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .header {
     margin-bottom: 36px;
     padding: 14px 35px;
@@ -114,7 +114,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .header {
     padding: 0;
   }
@@ -223,9 +223,9 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 678px) {
   .header {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 
   .container {
@@ -233,12 +233,27 @@
   }
 
   .heder__top {
+    align-items: flex-start;
+    flex-direction: column;
     padding: 17px 0;
     flex-wrap: wrap;
   }
 
   .nav__list {
-    /* display: none; */
+    gap: 22px;
+    overflow: auto;
+    flex-wrap: nowrap;
+  }
+
+  .nav__item {
+    flex-shrink: 0;
+    padding: 22px 0;
+  }
+
+  .nav__item svg {
+    position: absolute;
+    top: 22px;
+    right: 15px;
   }
 
   .hero {
@@ -254,17 +269,17 @@
   }
 
   .hero__title {
-    margin-bottom: 8px;
+    margin-bottom: 11px;
     font-size: 20px;
-    line-height: 100%;
+    line-height: 117%;
     text-align: center;
   }
 
   .hero__deskr {
-    margin-bottom: 32px;
+    margin-bottom: 35px;
     font-weight: 700;
     font-size: 12px;
-    line-height: 100%;
+    line-height: 120%;
     text-align: center;
   }
 
@@ -279,7 +294,7 @@
   }
 
   .stages__title {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     font-size: 24px;  
   }
 
@@ -289,47 +304,65 @@
   margin-bottom: 14px;
   }
 
-  .starget__image {
-    min-height: 290px;
-  }
-
   .left__descr {
-  font-size: 14px;
-  line-height: 28px;
+    margin-bottom: 12px;
+    font-weight: 400;
+    color: var(--blak-color);
+    font-size: 14px;
+    line-height: 28px;
   }
 
   .starget__btn {
-    font-size: 12px;
+    margin-bottom: -11px;
     color: var(--orange-color);
+    padding: 13px 44px;
+    font-size: 12px;
   }
 
-  .starget__left {
-    flex-direction: column;
+  .starget__image {
+    background-position: 0 0;
+    background-size: 100% 200px;
+    padding-top: 208px;
+    min-height: 0;
   }
 
   .starget__item {
     border: inherit;
   }
 
+  .starget__left {
+    flex-direction: column;
+    padding: 0;
+    align-items: flex-start;
+    height: auto;
+    background-color: transparent;
+  }
+
   .starget__circle {
-    gap: 12px;
     flex-direction: column;
     align-items: flex-start;
+    gap: 13px;
   }
 
   .starget__top {
-    width: 64px;
-    height: 49px;
+    width: 67px;
+    height: 58px;
   }
 
   .starget__bottom {
-    width: 64px;
-    height: 49px;
+    margin-bottom: -13px;
+    width: 67px;
+    height: 58px;
   }
 
   .item__title {
+    line-height: 123%;
     font-weight: 500;
     font-size: 18px;
+  }
+
+  .item__title {
+    margin-bottom: 5px;
   }
 
   .item__descr {
@@ -338,21 +371,26 @@
   }
 
   .question {
-    margin-bottom: 60px;
+    margin-bottom: 62px;
   }
 
   .question__title {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 26px;
   }
 
-  :root {
-    --gap: 16px;
+  .question__blok {
+    gap: 0;
+  }
+
+  .question__img {
+    margin-bottom: 16px;
+    min-height: 160px;
   }
 
   .question__left .item__title  {
-    line-height: 32px;
-    margin-bottom: 8px;
+    line-height: 22px;
+    margin-bottom: 13px;
   }
 
   .question__descr {
@@ -360,11 +398,17 @@
     line-height: 28px;
   }
 
+  .question__list {
+    gap: 10px;
+  }
+
   .question__btn {
+    padding: 13px 45px;
     font-size: 12px;
   }
 
   .btn__right {
+    padding: 13px 30px;
     font-size: 12px;
   }
 
@@ -374,7 +418,7 @@
 
   .application__title {
     font-size: 24px; 
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 
   .application__item {
@@ -384,8 +428,9 @@
 
   .application .item__title {
     font-size: 18px;
-    line-height: 100%;
+    line-height: 117%;
     font-weight: 500;
+    margin-bottom: 5px;
   }
 
   .application__descr {
@@ -394,26 +439,36 @@
   }
 
   .footer__title {
-    width: 215px;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 22px;
+    margin-bottom: 23px;
   }
 
   .footer__blok {
-    padding: 30px 0;
+    padding: 35px 0;
   }
 
-  .footer__form {
-    width: 290px;
-    margin-bottom: 25px;
+  .footer__input {
+    padding: 14px 16px;
+  }
+
+  .footer__textarea {
+    padding: 17px 17px;
+  }
+
+  .footer__form { 
+    max-width: 290px;
+    margin-bottom: 30px;
   }
 
   .footer__btn {
-    width: 290px;
+    max-width: 290px;
     flex-direction: column;
+    margin-bottom: 24px;
   }
 
   .footer__wraper {
+    max-width: 162px;
+    padding: 10px 0;
     margin-bottom: 11px;
   }
 
@@ -424,7 +479,8 @@
   }
 
   .footer__logo {
-    padding: 16px 0;
+    margin-bottom: -9px;
+    padding: 15px 0;
   }
 
   .footer__left::before {
