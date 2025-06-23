@@ -89,9 +89,6 @@ img {
 
 .container {
   max-width: 1800px;
-  width: 100%;
-  padding: 0 24px;
-  margin: 0 auto;
 }
 
 .section_title {
@@ -205,7 +202,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 60%;
 }
 
 .hero__title {
@@ -299,16 +295,7 @@ img {
   color: var(--blak-color);
 }
 
-.starget__blok {
-  --offsets: 1;
-  width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets)+1));
-  display: flex;
-  gap: var(--gap);
-}
-
 .starget__image {
-  margin-right: auto;
-  width: 100%;
   min-height: 622px;
   display: flex;
   align-items: flex-end;
@@ -400,7 +387,6 @@ img {
 }
 
 .starget__right {
-  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -437,11 +423,11 @@ img {
   color: var(--blak-color);
 }
 
-.question__blok {
+/* .question__blok {
   display: flex;
   gap: var(--gap);
   justify-content: space-between;
-}
+} */
 
 .question__left {
   width: 49%;
@@ -524,14 +510,11 @@ img {
 }
 /* application */
 .application {
-  margin-bottom: 100px;
+  margin-bottom: 68px;
 }
 
-.application__list {
+.aplication__column {
   display: flex;
-  gap: var(--gap);
-  justify-content: space-between;
-  --offsets: 2;
 }
 
 .application__item {
@@ -539,6 +522,7 @@ img {
   border: 1px solid var(--Light_gray-color);
   border-radius: var(--border-radius);
   padding: 65px 60px;
+  margin-bottom: 32px;
 }
 
 .application__title {

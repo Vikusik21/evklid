@@ -56,6 +56,7 @@
 
   .starget__image {
     min-height: 640px;
+    margin-bottom: 32px;
   }
 
   .starget__descr {
@@ -192,7 +193,7 @@
   }
 
   .application {
-    margin-bottom: 85px;
+    margin-bottom: 53px;
   }
 
   .footer__blok {
@@ -333,6 +334,7 @@
   .starget__left {
     flex-direction: column;
     padding: 0;
+    margin-bottom: 32px;
     align-items: flex-start;
     height: auto;
     background-color: transparent;
